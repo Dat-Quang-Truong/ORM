@@ -20,13 +20,13 @@ app.get('/customers', async (req, res) => {
 
 
 async function main() {
-  // const allcustomers = await prisma.customers.findMany({
-  //   include: {
-  //       orders: true
-  //   },
+  const allcustomers = await prisma.customers.findMany({
+    include: {
+        orders: true
+    }
     
-  // });
-  // console.log(allcustomers[1].orders);
+  });
+  console.log(allcustomers);
 }
 
 main()
