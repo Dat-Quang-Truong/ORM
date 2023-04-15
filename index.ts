@@ -38,3 +38,7 @@ main()
     await prisma.$disconnect()
     process.exit(1)
   })
+
+app.listen(3000, () => {
+  console.log('Test ORM');
+})
