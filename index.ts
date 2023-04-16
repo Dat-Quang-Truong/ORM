@@ -39,6 +39,7 @@ main()
     process.exit(1)
   })
 
-app.listen(3000, () => {
+// Ket noi server
+app.listen(3000, ()=> {
   console.log('Test ORM');
 })
